@@ -14,6 +14,7 @@
 		BACA8CE81DE6BEF100739001 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BACA8CE61DE6BEF100739001 /* LaunchScreen.storyboard */; };
 		BACA8CF31DE6BEF100739001 /* iOS_NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACA8CF21DE6BEF100739001 /* iOS_NetworkingTests.swift */; };
 		BACA8CFE1DE6BEF100739001 /* iOS_NetworkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACA8CFD1DE6BEF100739001 /* iOS_NetworkingUITests.swift */; };
+		BAE973FB1E76202000B8895F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE973FA1E76202000B8895F /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		BACA8CF91DE6BEF100739001 /* iOS NetworkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS NetworkingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BACA8CFD1DE6BEF100739001 /* iOS_NetworkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_NetworkingUITests.swift; sourceTree = "<group>"; };
 		BACA8CFF1DE6BEF100739001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAE973FA1E76202000B8895F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				BACA8CE41DE6BEF100739001 /* Assets.xcassets */,
 				BACA8CE61DE6BEF100739001 /* LaunchScreen.storyboard */,
 				BACA8CE91DE6BEF100739001 /* Info.plist */,
+				BAE973FA1E76202000B8895F /* Constants.swift */,
 			);
 			path = "iOS Networking";
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BACA8CE01DE6BEF100739001 /* ViewController.swift in Sources */,
+				BAE973FB1E76202000B8895F /* Constants.swift in Sources */,
 				BACA8CDE1DE6BEF100739001 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +509,7 @@
 				BACA8D041DE6BEF100739001 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BACA8D051DE6BEF100739001 /* Build configuration list for PBXNativeTarget "iOS NetworkingTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +518,7 @@
 				BACA8D071DE6BEF100739001 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BACA8D081DE6BEF100739001 /* Build configuration list for PBXNativeTarget "iOS NetworkingUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +527,7 @@
 				BACA8D0A1DE6BEF100739001 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
