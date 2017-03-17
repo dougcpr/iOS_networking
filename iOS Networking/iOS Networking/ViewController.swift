@@ -70,7 +70,6 @@ class ViewController: UIViewController {
                         // 2e. Iterate over the results and look for the key "title"
                         //     Print any values associated with key "title"
                         for results in movieResults {
-                            // let title = results["title"] as! String
                             let poster = results["poster_path"] as! String
                             let image = "https://image.tmdb.org/t/p/w500" + poster
                             if let url = URL(string: image) {
