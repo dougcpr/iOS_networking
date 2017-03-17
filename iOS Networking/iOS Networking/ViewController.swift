@@ -12,8 +12,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var moviePoster: UIImageView!
     
-    /*  1. Calling the super delegeta to intialize view did load function(s): getMovieTitle
-        2. FUNCTION: getMovieTitle()
+    /*  1. Calling the super delegete to intialize view did load function(s): getMoviePoster
+        2. FUNCTION: getMoviePoster()
          2a. Sets up Session Configuration and URL for HTTP request
           2b. Intializes local variable, task, to a session data task
           2c. If no error returns, an HTTP request is made and variable json is
@@ -44,7 +44,7 @@ class ViewController: UIViewController {
     
     //************************************//
     //************************************//
-    // 2. Get Moive Poster FUNCTION
+    // 2. Get Movie Poster FUNCTION
     func getMoviePoster(){
         
         // 2a. Session Configuration
