@@ -67,8 +67,8 @@ class ViewController: UIViewController {
                     {
                         // 2d. Assign a local variable to the HTTP response of results
                         let movieResults = json["results"] as! [AnyObject]
-                        // 2e. Iterate over the results and look for the key "title"
-                        //     Print any values associated with key "title"
+                        // 2e. Iterate over the results and look for the key "poster_path"
+                        //     Print any values associated with key "poster_path"
                         for results in movieResults {
                             let poster = results["poster_path"] as! String
                             let image = "https://image.tmdb.org/t/p/w500" + poster
