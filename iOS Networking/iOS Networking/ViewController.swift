@@ -22,6 +22,7 @@ class ViewController: UIViewController {
               and the number of pages you hit
           2d. Assigns a variable to the results array
           2e. Loops over results array and queries for movie titles, and prints title
+          2f. Start the task.
     */
     
 
