@@ -51,10 +51,11 @@ class ViewController: UIViewController {
         // 2a. Session Configuration
         let config = URLSessionConfiguration.default
         let session = URLSession(configuration: config)
-        let url = URL(string: "https://api.themoviedb.org/3/discover/movie?api_key=92cb81ddfc3428a603c8de20d6ee594b&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&release_date.gte=2017-02-28&vote_count.gte=1340&vote_count.lte=1340")!
+        let url = URL(string: "https://api.themoviedb.org/3/find/tt0112697?api_key=92cb81ddfc3428a603c8de20d6ee594b&language=en-US&external_source=imdb_id")!
     
         // 2b. Task Assignment
         let task = session.dataTask(with: url, completionHandler: {(data, response, error) in
+            print("task started")
     
             if error != nil {
     
@@ -67,7 +68,8 @@ class ViewController: UIViewController {
                     if let json = try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? Dictionary<String, Any>
                     {
                         // 2d. Assign a local variable to the HTTP response of results
-                        let movieResults = json["results"] as! [AnyObject]
+                        let movieResults = json["movie_results"] as! [AnyObject]
+                        print(movieResults)
                         // 2e. Iterate over the results and look for the key "poster_path"
                         //     Print any values associated with key "poster_path"
                         for results in movieResults {
@@ -78,6 +80,7 @@ class ViewController: UIViewController {
                                     self.moviePoster.image = UIImage(data: data as Data)
                                 }
                             }
+                            print(poster)
                             print(image)
                         }
                     }
